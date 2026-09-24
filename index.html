@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKILLNEXUS — Community Skill Exchange & Learning Network</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       LANDING PAGE VIEW
+       ========================================================================== -->
+  <div id="landing-view">
+    <nav class="landing-nav">
+      <div class="brand-logo">
+        <div class="brand-icon">S</div>
+        SKILL<span>NEXUS</span>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="btn btn-outline btn-sm" id="landing-explore-btn">Explore Skills</button>
+        <button class="btn btn-primary btn-sm" id="landing-join-btn">Join Community</button>
+      </div>
+    </nav>
+
+    <main class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tagline">Skill Exchange • Peer Mentorship</div>
+        <h1 class="hero-title">
+          LEARN.<br>
+          <span class="highlight">SHARE.</span><br>
+          CONNECT.
+        </h1>
+        <p class="hero-subtitle">
+          Discover people with complementary skills, exchange knowledge directly, and grow together in a community built on mutual learning.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" id="hero-get-started">GET STARTED →</button>
+          <button class="btn btn-secondary" id="hero-explore">EXPLORE SKILLS</button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">1K+</div>
+            <div class="stat-label">Learners</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Skills Shared</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">98%</div>
+            <div class="stat-label">Match Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Network Graphic Visual -->
+      <div class="hero-visual-container">
+        <svg class="network-svg">
+          <line x1="20%" y1="20%" x2="45%" y2="45%" class="network-line" />
+          <line x1="80%" y1="15%" x2="45%" y2="45%" class="network-line" />
+          <line x1="15%" y1="70%" x2="45%" y2="45%" class="network-line" />
+          <line x1="85%" y1="75%" x2="45%" y2="45%" class="network-line" />
+          <line x1="45%" y1="85%" x2="45%" y2="45%" class="network-line" />
+        </svg>
+
+        <div class="network-nodes">
+          <div class="node node-center">
+            <div class="node-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <div class="node-text">You</div>
+              <div class="node-subtext">Python • Design</div>
+            </div>
+          </div>
+
+          <div class="node node-1">
+            <div class="node-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <div class="node-text">Aarav</div>
+              <div class="node-subtext">Teaches Python</div>
+            </div>
+          </div>
+
+          <div class="node node-2">
+            <div class="node-avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <div class="node-text">Priya</div>
+              <div class="node-subtext">Teaches Video Editing</div>
+            </div>
+          </div>
+
+          <div class="node node-3">
+            <div class="node-avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <div class="node-text">Rohan</div>
+              <div class="node-subtext">Teaches Digital Mktg</div>
+            </div>
+          </div>
+
+          <div class="node node-4">
+            <div class="node-avatar" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <div class="node-text">Sneha</div>
+              <div class="node-subtext">Teaches UI/UX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer style="padding: 3rem 5%; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; max-width: 1400px; margin: 0 auto; width: 100%;">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 0.5rem;">
+          <div class="brand-icon">S</div>
+          SKILL<span>NEXUS</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Skills today. Opportunities tomorrow.</p>
+      </div>
+      <div style="display: flex; gap: 3rem; font-size: 0.85rem;">
+        <div>
+          <div style="font-weight: 700; color: var(--gold-light); margin-bottom: 0.5rem;">PLATFORM</div>
+          <p>Discover</p>
+          <p>Matches</p>
+          <p>Analytics</p>
+        </div>
+        <div>
+          <div style="font-weight: 700; color: var(--gold-light); margin-bottom: 0.5rem;">COMMUNITY</div>
+          <p>About Us</p>
+          <p>How It Works</p>
+          <p>Support</p>
+        </div>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--text-muted); align-self: flex-end;">
+        © 2026 SkillNexus. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- ==========================================================================
+       AUTHENTICATION / JOIN MODAL
+       ========================================================================== -->
+  <div id="modal-auth" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="auth-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div class="brand-logo" style="justify-content: center; margin-bottom: 0.5rem;">
+          <div class="brand-icon">S</div>
+          SKILL<span>NEXUS</span>
+        </div>
+        <h3 style="font-size: 1.3rem;">Join the Learning Network</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);">Set up your profile to start exchanging skills.</p>
+      </div>
+
+      <form id="auth-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="auth-name" class="form-control" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="auth-email" class="form-control" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label>Department / Profession</label>
+          <input type="text" id="auth-dept" class="form-control" placeholder="e.g. CSE / Design">
+        </div>
+        <div class="form-group">
+          <label>Year / Experience</label>
+          <input type="text" id="auth-year" class="form-control" placeholder="e.g. 2nd Year">
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">ENTER SKILLNEXUS</button>
+          <button type="button" id="auth-demo-btn" class="btn btn-secondary" style="width: 100%;">CONTINUE AS DEMO USER</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       MAIN APP LAYOUT (SPA)
+       ========================================================================== -->
+  <div id="app-layout" class="hidden">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">
+          <div class="brand-icon">S</div>
+          SKILL<span>NEXUS</span>
+        </div>
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-item active" data-view="dashboard">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+            Dashboard
+          </button>
+        </li>
+        <li class="nav-item" data-view="discover">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            Discover
+          </button>
+        </li>
+        <li class="nav-item" data-view="matches">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            Matches
+          </button>
+        </li>
+        <li class="nav-item" data-view="goals">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Learning Goals
+          </button>
+        </li>
+        <li class="nav-item" data-view="tracker">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Activity Tracker
+          </button>
+        </li>
+        <li class="nav-item" data-view="analytics">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+            Analytics
+          </button>
+        </li>
+        <li class="nav-item" data-view="achievements">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+            Achievements
+          </button>
+        </li>
+        <li class="nav-item" data-view="profile">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+            My Profile
+          </button>
+        </li>
+        <li class="nav-item" data-view="settings">
+          <button>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /></svg>
+            Settings
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <button id="logout-btn" class="btn btn-outline btn-sm" style="width: 100%; border-color: rgba(255,85,85,0.3); color: #ff7777;">
+          Log Out
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="search-box">
+          <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="global-search" placeholder="Search skills, people or categories...">
+        </div>
+
+        <div class="topbar-actions">
+          <div class="notification-btn">
+            <button class="btn-icon" id="notif-toggle-btn">🔔</button>
+            <div class="notification-badge" id="notif-badge"></div>
+          </div>
+
+          <div class="user-profile-pill" id="topbar-user-pill">
+            <div class="avatar" id="user-avatar-pill">K</div>
+            <div class="user-info">
+              <span class="user-name" id="topbar-user-name">Learner</span>
+              <span class="user-dept" id="topbar-user-dept">CSE • 2nd Year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notification Panel Dropdown -->
+        <div class="notification-panel hidden" id="notif-panel">
+          <div class="notif-header">
+            <span>NOTIFICATIONS</span>
+            <span style="font-size: 0.75rem; color: var(--gold-light); cursor: pointer;" id="clear-notif">Mark all read</span>
+          </div>
+          <div id="notif-list-container" style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div class="notif-item">
+              ✦ <strong>Aarav</strong> matches your Python learning goal.
+            </div>
+            <div class="notif-item">
+              ✦ You completed a learning milestone for <strong>Video Editing</strong>.
+            </div>
+            <div class="notif-item">
+              ✦ New skill recommendation: <strong>Machine Learning</strong>.
+            </div>
+            <div class="notif-item">
+              ✦ Your <strong>7-day learning streak</strong> is active! 🔥
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamic Views Container -->
+      <main class="content-area">
+        
+        <!-- DASHBOARD VIEW -->
+        <section id="view-dashboard" class="app-view">
+          <div class="section-header">
+            <h1 class="section-title">Good evening, <span id="dash-greeting-name">Learner</span> 👋</h1>
+            <p class="section-subtitle">Keep learning. Keep sharing. Keep growing.</p>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Skills Offered</div>
+                <div class="stat-card-val" id="stat-offered">4</div>
+              </div>
+              <div class="stat-card-icon">🎓</div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Skills Learning</div>
+                <div class="stat-card-val" id="stat-learning">4</div>
+              </div>
+              <div class="stat-card-icon">📖</div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Sessions Completed</div>
+                <div class="stat-card-val" id="stat-sessions">12</div>
+              </div>
+              <div class="stat-card-icon">⏳</div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Learning Streak</div>
+                <div class="stat-card-val" id="stat-streak">7 days 🔥</div>
+              </div>
+              <div class="stat-card-icon">⚡</div>
+            </div>
+          </div>
+
+          <!-- Learning Progress & Recommended Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem;">
+            <div class="card">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--gold-light);">YOUR LEARNING PROGRESS</h3>
+              <div class="progress-list" id="dashboard-progress-list">
+                <!-- Dynamic progress bars -->
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--gold-light);">RECOMMENDED FOR YOU</h3>
+              <div id="dashboard-recommended-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                <!-- Dynamic recommendation cards -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DISCOVER VIEW -->
+        <section id="view-discover" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">DISCOVER AMAZING PEOPLE</h1>
+            <p class="section-subtitle">Find people who know what you want to learn.</p>
+          </div>
+
+          <!-- Category Pills -->
+          <div class="category-filter-bar" id="category-pills">
+            <button class="cat-btn active" data-cat="All">All</button>
+            <button class="cat-btn" data-cat="Programming">Programming</button>
+            <button class="cat-btn" data-cat="Design">Design</button>
+            <button class="cat-btn" data-cat="Marketing">Marketing</button>
+            <button class="cat-btn" data-cat="Communication">Communication</button>
+            <button class="cat-btn" data-cat="Media">Media</button>
+            <button class="cat-btn" data-cat="Photography">Photography</button>
+            <button class="cat-btn" data-cat="Business">Business</button>
+            <button class="cat-btn" data-cat="Science">Science</button>
+          </div>
+
+          <!-- Responsive Users Grid -->
+          <div class="users-grid" id="discover-users-grid">
+            <!-- Dynamic users populated here -->
+          </div>
+        </section>
+
+        <!-- MATCHES VIEW -->
+        <section id="view-matches" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">YOUR SKILL MATCHES</h1>
+            <p class="section-subtitle">Calculated compatibility based on teaching and learning goals.</p>
+          </div>
+
+          <!-- Special Mutual Match UI Container -->
+          <div id="mutual-match-container">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <h3 style="font-size: 1.2rem; margin-bottom: 1.25rem; color: var(--gold-light);">ALL MATCHING LEARNERS</h3>
+          <div class="users-grid" id="matches-users-grid">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- GOALS VIEW -->
+        <section id="view-goals" class="app-view hidden">
+          <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <h1 class="section-title">MY LEARNING GOALS</h1>
+              <p class="section-subtitle">Track your target skills and learning milestones.</p>
+            </div>
+            <button class="btn btn-primary" id="open-add-goal-btn">+ ADD GOAL</button>
+          </div>
+
+          <div class="goals-tabs">
+            <button class="tab-btn active" data-goaltab="ongoing">ONGOING</button>
+            <button class="tab-btn" data-goaltab="completed">COMPLETED</button>
+          </div>
+
+          <div class="goals-grid" id="goals-list-grid">
+            <!-- Dynamic goals -->
+          </div>
+        </section>
+
+        <!-- TRACKER VIEW -->
+        <section id="view-tracker" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">ACTIVITY TRACKER</h1>
+            <p class="section-subtitle">Log your learning sessions and maintain your streak.</p>
+          </div>
+
+          <div class="tracker-layout">
+            <div class="card">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1.25rem; color: var(--gold-light);">RECORD A LEARNING SESSION</h3>
+              <form id="record-session-form">
+                <div class="form-group">
+                  <label>Skill</label>
+                  <select id="session-skill" class="form-control" required>
+                    <option value="">-- Select Skill --</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Learning Partner</label>
+                  <select id="session-partner" class="form-control" required>
+                    <option value="">-- Select Partner --</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Duration (minutes)</label>
+                  <input type="number" id="session-duration" class="form-control" value="60" min="15" max="300" required>
+                </div>
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" id="session-date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Notes</label>
+                  <textarea id="session-notes" class="form-control" rows="3" placeholder="What did you learn today?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">ADD SESSION</button>
+              </form>
+            </div>
+
+            <div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 1.25rem; color: var(--gold-light);">RECENT ACTIVITIES</h3>
+              <div class="timeline" id="recent-activities-timeline">
+                <!-- Dynamic timeline items -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ANALYTICS VIEW -->
+        <section id="view-analytics" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">LEARNING ANALYTICS</h1>
+            <p class="section-subtitle">Visual insights into your learning effort and growth.</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Total Sessions</div>
+                <div class="stat-card-val" id="analytics-total-sessions">24</div>
+              </div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Goals Completed</div>
+                <div class="stat-card-val" id="analytics-goals-completed">5</div>
+              </div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Skills Developed</div>
+                <div class="stat-card-val" id="analytics-skills-dev">8</div>
+              </div>
+            </div>
+            <div class="card stat-card">
+              <div>
+                <div class="stat-card-title">Current Streak</div>
+                <div class="stat-card-val" id="analytics-streak">7</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bar Chart Card -->
+          <div class="card analytics-chart-card">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--gold-light);">WEEKLY ACTIVITY (HOURS)</h3>
+            <div class="bar-chart-container" id="bar-chart-bars">
+              <!-- Dynamically populated pure CSS/JS bars -->
+            </div>
+          </div>
+
+          <!-- Growth Areas -->
+          <div class="card">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--gold-light);">GROWTH AREAS</h3>
+            <div class="growth-grid">
+              <div class="growth-card card-glass">
+                <div class="growth-tag">Most Practiced</div>
+                <div class="growth-skill">Python</div>
+              </div>
+              <div class="growth-card card-glass">
+                <div class="growth-tag">Fastest Growing</div>
+                <div class="growth-skill">Video Editing</div>
+              </div>
+              <div class="growth-card card-glass">
+                <div class="growth-tag">Needs Attention</div>
+                <div class="growth-skill">Digital Marketing</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACHIEVEMENTS VIEW -->
+        <section id="view-achievements" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">ACHIEVEMENTS</h1>
+            <p class="section-subtitle">Earn badges by being active in learning and sharing.</p>
+          </div>
+
+          <div class="achievements-grid" id="achievements-grid-container">
+            <!-- Dynamic achievement cards -->
+          </div>
+        </section>
+
+        <!-- HISTORY VIEW -->
+        <section id="view-history" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">LEARNING HISTORY</h1>
+            <p class="section-subtitle">Complete chronological log of your skill exchanges.</p>
+          </div>
+
+          <div class="goals-tabs">
+            <button class="tab-btn active" data-histfilter="all">All</button>
+            <button class="tab-btn" data-histfilter="learning">Learning</button>
+            <button class="tab-btn" data-histfilter="teaching">Teaching</button>
+          </div>
+
+          <div class="timeline" id="history-timeline">
+            <!-- Dynamic history -->
+          </div>
+        </section>
+
+        <!-- PROFILE VIEW -->
+        <section id="view-profile" class="app-view hidden">
+          <div class="card profile-header-card">
+            <div class="profile-avatar-large" id="profile-page-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80');"></div>
+            <div>
+              <h1 style="font-size: 1.8rem;" id="profile-page-name">Demo User</h1>
+              <p style="color: var(--gold-light); font-weight: 500;" id="profile-page-dept">CSE • 2nd Year</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">Learning • Design • Technology</p>
+
+              <div class="profile-stats-row">
+                <div class="profile-stat-box">
+                  <span class="profile-stat-val">12</span>
+                  <span class="profile-stat-lbl">Connections</span>
+                </div>
+                <div class="profile-stat-box">
+                  <span class="profile-stat-val" id="profile-skills-count">8</span>
+                  <span class="profile-stat-lbl">Skills</span>
+                </div>
+                <div class="profile-stat-box">
+                  <span class="profile-stat-val">7</span>
+                  <span class="profile-stat-lbl">Goals</span>
+                </div>
+                <div class="profile-stat-box">
+                  <span class="profile-stat-val" id="profile-sessions-count">24</span>
+                  <span class="profile-stat-lbl">Sessions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <!-- Skills I Can Teach -->
+            <div class="card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+                <h3 style="font-size: 1.1rem; color: var(--gold-light);">SKILLS I CAN TEACH</h3>
+                <button class="btn btn-secondary btn-sm" id="add-teach-skill-btn">+ ADD SKILL</button>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;" id="profile-teach-chips">
+                <!-- Editable chips -->
+              </div>
+            </div>
+
+            <!-- Skills I Want To Learn -->
+            <div class="card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+                <h3 style="font-size: 1.1rem; color: var(--gold-light);">SKILLS I WANT TO LEARN</h3>
+                <button class="btn btn-secondary btn-sm" id="add-learn-skill-btn">+ ADD SKILL</button>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;" id="profile-learn-chips">
+                <!-- Editable chips -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SETTINGS VIEW -->
+        <section id="view-settings" class="app-view hidden">
+          <div class="section-header">
+            <h1 class="section-title">SETTINGS</h1>
+            <p class="section-subtitle">Manage preferences and platform notifications.</p>
+          </div>
+
+          <div class="card" style="max-width: 600px; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h4 style="font-size: 0.95rem;">Profile Visibility</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Allow other learners to discover your profile</p>
+              </div>
+              <input type="checkbox" checked style="accent-color: var(--gold); width: 20px; height: 20px;">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h4 style="font-size: 0.95rem;">Learning Recommendations</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Receive smart peer recommendations</p>
+              </div>
+              <input type="checkbox" checked style="accent-color: var(--gold); width: 20px; height: 20px;">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h4 style="font-size: 0.95rem;">Activity Reminders</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Get streak and session reminder alerts</p>
+              </div>
+              <input type="checkbox" checked style="accent-color: var(--gold); width: 20px; height: 20px;">
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+  
+  <!-- Profile Detail Modal -->
+  <div id="modal-profile" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button class="modal-close" class="close-modal">&times;</button>
+      <div id="modal-profile-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Goal Modal -->
+  <div id="modal-add-goal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button class="modal-close" class="close-modal">&times;</button>
+      <h3 style="font-size: 1.3rem; margin-bottom: 1.25rem; color: var(--gold-light);">Create Learning Goal</h3>
+      <form id="add-goal-form">
+        <div class="form-group">
+          <label>Skill Name</label>
+          <input type="text" id="goal-skill-name" class="form-control" placeholder="e.g. Machine Learning" required>
+        </div>
+        <div class="form-group">
+          <label>Target Date</label>
+          <input type="date" id="goal-target-date" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Starting Progress (%)</label>
+          <input type="number" id="goal-starting-prog" class="form-control" value="10" min="0" max="100" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">CREATE GOAL</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add Skill Modal -->
+  <div id="modal-add-skill" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button class="modal-close" class="close-modal">&times;</button>
+      <h3 style="font-size: 1.3rem; margin-bottom: 1.25rem; color: var(--gold-light);" id="modal-skill-title">Add Skill</h3>
+      <form id="add-skill-form">
+        <input type="hidden" id="skill-type-hidden" value="teach">
+        <div class="form-group">
+          <label>Skill Name</label>
+          <input type="text" id="new-skill-input" class="form-control" placeholder="e.g. React Native / Public Speaking" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">ADD TO PROFILE</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
